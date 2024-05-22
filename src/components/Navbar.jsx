@@ -38,7 +38,7 @@ const Navbar = () => {
             }
           </button>
 
-          <a className='d-flex gap-3' href="/">
+          <a className='d-flex gap-3 w-12 md:w-14' href="/">
             <img src={SwapCoinsLogo} alt="logo" className='w-12 h-12 md:w-14' />
             <span className='hidden md:block text-2xl font-bold text-purple-700 font-sans'>Swap Coins</span>
           </a>
@@ -64,7 +64,7 @@ const Navbar = () => {
 
             {
               userData &&
-              <Link to={`/profile/${userData?._id}`} >
+              <Link to={`/profile/${userData?._id}`} className='w-10'>
                 <img className='w-10 h-10 rounded-full object-center' src={userData?.profileImgUrl} alt="profile-img" />
               </Link>
             }
