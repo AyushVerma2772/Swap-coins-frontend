@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+
+.input {
+    @apply block pt-2 pb-0.5 px-0 w-full text-gray-900 bg-transparent border-0 border-b-2 border-slate-400 appearance-none focus:border-slate-900 focus:outline-none focus:ring-0
+}
+
+.input-label {
+    @apply peer-focus:font-medium absolute text-base text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-slate-900  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6
+}
+
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: rgb(126 34 206);
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #fff;
+
+}
+
+body {
+    background-color: #F9F7F7;
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.b2b {
+    border: 2px solid blue;
+}
+
+.b2r {
+    border: 2px solid red;
+}
+
+
+.dot-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.zoom-img {
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+}
+
+.login-page, .signup-page {
+    background-image: url("./images/coinsRain.png");
+    background-size: cover;
+}
+
+
+
+
+.loader {
+   width: 30px;
+   height: 30px;
+   border-radius: 100%;
+   transform: perspective(168px) rotateX(0) rotateY(0);
+   animation: flipping-ypwp40md 2s infinite linear,
+          flipping-nphbg5md 3s infinite linear -0.5s;
+}
+
+@keyframes flipping-ypwp40md {
+   50% {
+      transform: perspective(168px) rotateX(180deg) rotateY(0);
+   }
+
+   100% {
+      transform: perspective(168px) rotateX(180deg) rotateY(180deg);
+   }
+}
+
+@keyframes flipping-nphbg5md {
+   0%, 33% {
+      background: #ffd82e;
+   }
+
+   33.1%, 66% {
+      background: #ffd82e;
+   }
+
+   66.1%, 100% {
+      background: #ffd82e;
+   }
+}
+
+
